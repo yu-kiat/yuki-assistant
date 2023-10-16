@@ -10,7 +10,6 @@ from datetime import datetime #idk why but this is broken when you just put "imp
 #global varriables
 
 
-
 #loading screen
 def loadingscreen():
     loadingwait = 0
@@ -64,15 +63,21 @@ def mainmenu():
 #basic tasks
 def basictasks():
     basechoice = 0
-    print("Basic Tasks: Choose an option:")
+    print("================================")
+    print(" Basic Tasks: Choose an option: ")
+    print("================================")
     time.sleep(1)
-    print("1. Your local time.")
+    print("      1. Your local time.       ")
+    print("================================")
     time.sleep(1)
-    print("2. *nix time.")
+    print("         2. Unix time.          ")
+    print("================================")
     time.sleep(1)
-    print("3. System stats.")
+    print("        3. System stats.        ")
+    print("================================")
     time.sleep(1)
     print("4. Return back to the main menu.")
+    print("================================")
     time.sleep(1)
     basicchoice = int(input("> "))
     if basicchoice == 1:
@@ -148,9 +153,9 @@ def advanced():
 def credit():
     menu3userchoice = "placeholder"
     time.sleep(1)
-    print("yuki AI, the AI that's not actually an AI.")
+    print("yuki assistant v0.1")
     time.sleep(1)
-    print("Made by yu kiat!")
+    print("Made by yuki! >u<")
     time.sleep(1)
     print("Licensed under the GNU GPL V3.")
     time.sleep(1)
@@ -168,8 +173,8 @@ def credit():
         print("That's not a valid option!")
         print("Now you're going to be stuck on this screen forever!!! >:)")
 
-#exiting
 
+#exiting
 def endprogram():
     print("Exiting....")
     time.sleep(2)
@@ -182,4 +187,4 @@ def main():
     os.system('clear')
     mainmenu()
 
-main()
+main() #delete this if you don't want to run the code
